@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'firstApp-Angular';
+  title = 'FirstApp-Angular';
+
+  // *********** Menu ************
+
+  menus: menuType[] = [
+    { name: "Home", link: "/" },
+    { name: "Account", link: "/account" },
+    { name: "About", link: "/about" },
+  ];
+
+  // *********** Menu Mobile************
+
+  open: boolean = false;
+
+
+}
+
+// *********** Class Type Menu ************
+class menuType {
+  name: string = "";
+  link: string = "";
 }
